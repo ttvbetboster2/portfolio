@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +12,7 @@ body {
   align-items: center;
   min-height: 100vh; 
   font-size: 20px;
+  scroll-behavior: smooth;
 }
   
   
@@ -23,6 +27,7 @@ main {
   
   h1 {
     font-size: 45px;
+    user-select: none;
   }
   
   .nav-links {
@@ -88,5 +93,46 @@ footer {
     gap: 1.5rem; 
     width: 100%;
   }
+  .tab-buttons {
+    display: flex;
+    margin: 1rem 0;
+    border: 1px solid white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: monospace;
+    cursor: pointer;
+    transition: 0.3s;
+    border-right: 1px solid white;
+  }
+  
+  .tab:last-child {
+    border-right: none;
+  }
+  
+  .tab.active {
+    background-color: #404040;
+  }
+  
+  .tab-content ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    list-style: none;
+    padding-left: 0;
+    gap: 0.5rem;
+  }
+  
+  .tab-content li {
+    font-family: monospace;
+    padding: 10px 0;
+  }
+  
   
   

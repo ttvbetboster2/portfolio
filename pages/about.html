@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chitraksh Kataria</title>
+    <title>About - Chitraksh Kataria</title>
     <link
       rel="icon"
       href="../assects/img/curly-brackets-icon-50x50.png"
@@ -12,23 +12,99 @@
     <link rel="stylesheet" href="../assects/css/style.css" />
     <script defer src="assects/js/script.js"></script>
   </head>
+  <script>
+    
+    document.addEventListener("DOMContentLoaded", () => {
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.tab-content');
+  
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          // Remove active from all tabs
+          tabs.forEach(t => t.classList.remove('active'));
+          contents.forEach(c => c.style.display = 'none');
+  
+          // Show the selected tab content
+          tab.classList.add('active');
+          const target = tab.getAttribute('data-tab');
+          document.getElementById(target).style.display = 'block';
+        });
+      });
+    });
+  </script>
+  
   <body>
     <main>
       <div class="layout">
         <nav class="nav-links">
           <a href="../index.html">Home</a>
-          <a href="pages/about.html" class="active">About</a>
-          <a href="#">Projects</a>
-          <a href="#">Experience</a>
+          <a href="about.html" class="active">About</a>
+          <a href="../pages/projects.html">Projects</a>
+          <a href="../pages/experience.html">Experience</a>
         </nav>
 
         <section class="content">
-          <h1>Coming Soon</h1>
-          <footer>
-            <a href="https://www.linkedin.com/in/chitraksh-katatia-858592359/"><img src="../assects/img/linkedin-app-white-icon.svg" alt="LinkedIn" /></a>
-            <a href="https://github.com/ttvbetboster2"><img src="../assects/img/github-white-icon.svg" alt="GitHub" /></a>
-            <a href="https://x.com/ttvbetboster7"><img src="../assects/img/x-social-media-white-icon.svg" alt="X, also known as Twitter." /></a>
-          </footer>
+          <h1>About Me</h1>
+          <p>
+            Hey! I'm <strong>Chitraksh Kataria</strong>, a second-year studiespesialisering
+            student at St.Olav vidregående. I'm passionate about
+            building smooth, creative user experiences that blend frontend
+            precision and backend logic.
+          </p>
+
+          <p></p>
+          <section class="content" id="skills">
+            <h1>🛠️Skills</h1>
+            <p>
+              I first started working with web development at school, and naturaly got passionate 
+              about it. These are the tool and languages i use:
+            </p>
+
+            <div class="tab-buttons">
+              <button class="tab active" data-tab="languages">Languages</button>
+              <button class="tab" data-tab="web">Web</button>
+              <button class="tab" data-tab="ml">ML</button>
+              <button class="tab" data-tab="tools">Tools</button>
+            </div>
+
+            <div class="tab-content" id="languages">
+              <ul>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="web" style="display: none">
+              <ul>
+                <li><img src="" alt="">HTML</li>
+                <li>CSS</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Typescrip</li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="ml" style="display: none">
+              <ul>
+                <li>None (In the learning phase)</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="tools" style="display: none">
+              <ul>
+                <li>Git</li>
+                <li>Github</li>
+                <li>VS Code</li>
+                <li>ChatGPT</li>
+              </ul>
+            </div>
+          </section>
+          <p>
+            Outside of coding, I enjoy gaming 🎮, solving technical challenges
+            🧠, and working on side projects just for fun. I love learning new
+            tech and tools that make development faster and easier.
+          </p>
         </section>
       </div>
     </main>
