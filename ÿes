@@ -1,0 +1,46 @@
+[33mcommit e44fa7908931c7f91338329c23976034095dae87[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Chitraksh Kataria <chitrakshkatariv3@gmail.com>
+Date:   Mon Mar 31 09:27:46 2025 +0200
+
+    Update index.html
+
+[33mcommit 08a88aef7f86cdf4388ed1e9d41ed5f8fc0321c0[m
+Author: Chitraksh Kataria <chitrakshkatariv3@gmail.com>
+Date:   Mon Mar 31 06:47:21 2025 +0200
+
+    Update README.md
+    
+    Added the link to my page through read me
+
+[33mcommit ef77c872c679442c12841645dc67e932a930001a[m
+Author: Chitraksh Kataria <chitrakshkatariv3@gmail.com>
+Date:   Mon Mar 31 00:13:35 2025 +0200
+
+    Create static.yml
+
+[33mcommit 67215307061c67a092046789c8d811240d3dc5fa[m
+Merge: 0ea4822 29280fb
+Author: Chitraksh Kataria <chitrakshkatariv3@gmail.com>
+Date:   Mon Mar 31 00:12:09 2025 +0200
+
+    Merge pull request #1 from ttvbetboster2/upload-check
+    
+    Add files via upload
+
+[33mcommit 29280fb8b8ab19d5bc66eba7cf4ff32ec06a271a[m
+Author: Chitraksh Kataria <chitrakshkatariv3@gmail.com>
+Date:   Mon Mar 31 00:11:22 2025 +0200
+
+    Add files via upload
+
+[33mcommit 0ea4822512002472ac321ff40f06a16c68a5ef5c[m
+Author: Chitraksh Kataria <chitrakshkatariv3@gmail.com>
+Date:   Mon Mar 31 00:09:44 2025 +0200
+
+    Update README.md
+
+[33mcommit 4cafcea943a40b966dcae075546d551f0d85257d[m
+Author: Chitraksh Kataria <chitrakshkatariv3@gmail.com>
+Date:   Sun Mar 30 23:53:18 2025 +0200
+
+    Initial commit
